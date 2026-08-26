@@ -1,0 +1,751 @@
+{
+  "total_calls": 15,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "evaluation_calls": [
+    "K-001",
+    "K-002",
+    "K-004",
+    "K-007",
+    "K-009",
+    "K-010",
+    "K-011",
+    "K-012",
+    "K-013",
+    "K-014",
+    "K-016",
+    "K-017",
+    "K-018",
+    "K-019",
+    "K-020"
+  ],
+  "results": [
+    {
+      "call_id": "K-001",
+      "passed": true,
+      "expected": {
+        "category": "Returns & Refunds",
+        "subcategory": "refund request",
+        "disposition": "Resolved",
+        "sentiment": "Positive",
+        "priority": "Low",
+        "escalate": false,
+        "decision": "AUTO_SAVE"
+      },
+      "actual": {
+        "category": "Returns & Refunds",
+        "subcategory": "refund request",
+        "disposition": "Resolved",
+        "sentiment": "Positive",
+        "priority": "Low",
+        "escalate": false,
+        "decision": "AUTO_SAVE"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "I returned a blender last week and I'm calling about my refund.",
+        "root_cause": "I can see the return was received. I've just processed the refund of 850 pounds to your card now.",
+        "resolution": "I can see the return was received. I've just processed the refund of 850 pounds to your card now.",
+        "next_action": "not stated",
+        "summary": "I returned a blender last week and I'm calling about my refund."
+      },
+      "rule_references": [
+        "1.2",
+        "3.2",
+        "2.2",
+        "2.4"
+      ],
+      "decision_reason": "Complete, grounded, routine, non-sensitive call with no escalation trigger.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-002",
+      "passed": true,
+      "expected": {
+        "category": "Billing & Payments",
+        "subcategory": "incorrect charge",
+        "disposition": "Resolved",
+        "sentiment": "Neutral",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "AUTO_SAVE"
+      },
+      "actual": {
+        "category": "Billing & Payments",
+        "subcategory": "incorrect charge",
+        "disposition": "Resolved",
+        "sentiment": "Neutral",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "AUTO_SAVE"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "You've charged me 400 pounds this month but my plan is 250. There's an extra charge I didn't agree to.",
+        "root_cause": "Let me look... yes, an add-on was applied in error. I've removed it and credited the 150 difference now.",
+        "resolution": "Let me look... yes, an add-on was applied in error. I've removed it and credited the 150 difference now.",
+        "next_action": "not stated",
+        "summary": "You've charged me 400 pounds this month but my plan is 250. There's an extra charge I didn't agree to."
+      },
+      "rule_references": [
+        "1.1",
+        "1.2",
+        "3.2",
+        "2.2",
+        "2.4"
+      ],
+      "decision_reason": "Complete, grounded, routine, non-sensitive call with no escalation trigger.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-004",
+      "passed": true,
+      "expected": {
+        "category": "Technical Support",
+        "subcategory": "cannot log in",
+        "disposition": "Resolved",
+        "sentiment": "Neutral",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "AUTO_SAVE"
+      },
+      "actual": {
+        "category": "Technical Support",
+        "subcategory": "cannot log in",
+        "disposition": "Resolved",
+        "sentiment": "Neutral",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "AUTO_SAVE"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "I can't log into my account, it keeps saying wrong password.",
+        "root_cause": "not stated",
+        "resolution": "I've sent a reset link to your registered number. Try it now.",
+        "next_action": "not stated",
+        "summary": "I can't log into my account, it keeps saying wrong password."
+      },
+      "rule_references": [
+        "1.4",
+        "3.2",
+        "2.2",
+        "2.4"
+      ],
+      "decision_reason": "Complete, grounded, routine, non-sensitive call with no escalation trigger.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-007",
+      "passed": true,
+      "expected": {
+        "category": "Order & Delivery",
+        "subcategory": "delivery delay",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Negative",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "AUTO_SAVE"
+      },
+      "actual": {
+        "category": "Order & Delivery",
+        "subcategory": "delivery delay",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Negative",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "AUTO_SAVE"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "My delivery is three days late and no one has updated me.",
+        "root_cause": "I'm sorry about that. I can see it's stuck at the courier. I've raised a ticket with logistics and they'll chase it — I can't give you a new date on this call yet.",
+        "resolution": "not stated",
+        "next_action": "I'm sorry about that. I can see it's stuck at the courier. I've raised a ticket with logistics and they'll chase it — I can't give you a new date on this call yet.",
+        "summary": "My delivery is three days late and no one has updated me."
+      },
+      "rule_references": [
+        "1.3",
+        "3.2",
+        "2.2",
+        "2.3",
+        "2.4"
+      ],
+      "decision_reason": "Complete, grounded, routine, non-sensitive call with no escalation trigger.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-009",
+      "passed": true,
+      "expected": {
+        "category": "Other",
+        "subcategory": "unclear",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Neutral",
+        "priority": "Low",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "actual": {
+        "category": "Other",
+        "subcategory": "unclear",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Neutral",
+        "priority": "Low",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "Yeah hi, it's about the... [line breaks up] ...and then they said... sorry, can you hear me?",
+        "root_cause": "not stated",
+        "resolution": "not stated",
+        "next_action": "not stated",
+        "summary": "Yeah hi, it's about the... [line breaks up] ...and then they said... sorry, can you hear me?"
+      },
+      "rule_references": [
+        "1.10",
+        "5.5",
+        "3.2",
+        "2.2",
+        "2.4"
+      ],
+      "decision_reason": "Code-based confidence/safety gate requires human review.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-010",
+      "passed": true,
+      "expected": {
+        "category": "Returns & Refunds",
+        "subcategory": "refund request",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Negative",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "actual": {
+        "category": "Returns & Refunds",
+        "subcategory": "refund request",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Negative",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "I want a refund on a jacket, it doesn't fit.",
+        "root_cause": "not stated",
+        "resolution": "not stated",
+        "next_action": "I'd need to check whether it's within the return window and if it's been worn — I can't confirm eligibility right now, our returns system is down. Someone will review it.",
+        "summary": "I want a refund on a jacket, it doesn't fit."
+      },
+      "rule_references": [
+        "1.2",
+        "3.2",
+        "2.2",
+        "2.3",
+        "2.4"
+      ],
+      "decision_reason": "Code-based confidence/safety gate requires human review.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-011",
+      "passed": true,
+      "expected": {
+        "category": "Account Management",
+        "subcategory": "security concern",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Neutral",
+        "priority": "High",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "actual": {
+        "category": "Account Management",
+        "subcategory": "security concern",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Neutral",
+        "priority": "High",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "I want to change the phone number on my account.",
+        "root_cause": "not stated",
+        "resolution": "not stated",
+        "next_action": "not stated",
+        "summary": "I want to change the phone number on my account."
+      },
+      "rule_references": [
+        "1.5",
+        "3.2",
+        "2.2",
+        "2.4",
+        "6.2",
+        "4.4"
+      ],
+      "decision_reason": "Code-based confidence/safety gate requires human review.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-012",
+      "passed": true,
+      "expected": {
+        "category": "Appointments & Bookings",
+        "subcategory": "reschedule",
+        "disposition": "Resolved",
+        "sentiment": "Positive",
+        "priority": "Low",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "actual": {
+        "category": "Appointments & Bookings",
+        "subcategory": "reschedule",
+        "disposition": "Resolved",
+        "sentiment": "Positive",
+        "priority": "Low",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "I need to move my follow-up appointment after my surgery next week.",
+        "root_cause": "not stated",
+        "resolution": "Of course. I've moved it to the following Tuesday at 10am.",
+        "next_action": "not stated",
+        "summary": "I need to move my follow-up appointment after my surgery next week."
+      },
+      "rule_references": [
+        "1.9",
+        "3.2",
+        "4.3",
+        "6.1",
+        "2.2",
+        "2.4"
+      ],
+      "decision_reason": "Code-based confidence/safety gate requires human review.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-013",
+      "passed": true,
+      "expected": {
+        "category": "Other",
+        "subcategory": "partnership",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Neutral",
+        "priority": "Low",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "actual": {
+        "category": "Other",
+        "subcategory": "partnership",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Neutral",
+        "priority": "Low",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "Hi, I'm not a guest — I run a travel blog and I'd like to discuss a partnership and maybe a free stay.",
+        "root_cause": "not stated",
+        "resolution": "not stated",
+        "next_action": "not stated",
+        "summary": "Hi, I'm not a guest — I run a travel blog and I'd like to discuss a partnership and maybe a free stay."
+      },
+      "rule_references": [
+        "1.10",
+        "3.2",
+        "2.2",
+        "2.4"
+      ],
+      "decision_reason": "Code-based confidence/safety gate requires human review.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-014",
+      "passed": true,
+      "expected": {
+        "category": "Billing & Payments",
+        "subcategory": "billing dispute",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Neutral",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "actual": {
+        "category": "Billing & Payments",
+        "subcategory": "billing dispute",
+        "disposition": "Unresolved — pending",
+        "sentiment": "Neutral",
+        "priority": "Medium",
+        "escalate": false,
+        "decision": "ROUTE_TO_REVIEW"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "I've fallen behind on my bill. Money's very tight since I lost my job. Is there a payment plan?",
+        "root_cause": "not stated",
+        "resolution": "not stated",
+        "next_action": "I'm sorry to hear that. Yes, we can look at a plan — let me note your situation and our hardship team will set one up and call you.",
+        "summary": "I've fallen behind on my bill. Money's very tight since I lost my job. Is there a payment plan?"
+      },
+      "rule_references": [
+        "1.1",
+        "4.3",
+        "3.2",
+        "2.2",
+        "2.3",
+        "2.4"
+      ],
+      "decision_reason": "Code-based confidence/safety gate requires human review.",
+      "escalation_reason": null
+    },
+    {
+      "call_id": "K-016",
+      "passed": true,
+      "expected": {
+        "category": "Complaint",
+        "subcategory": "repeated failure",
+        "disposition": "Escalated",
+        "sentiment": "At-risk",
+        "priority": "Urgent",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "actual": {
+        "category": "Complaint",
+        "subcategory": "repeated failure",
+        "disposition": "Escalated",
+        "sentiment": "At-risk",
+        "priority": "Urgent",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "This is the third time my order's arrived broken and I've had enough. If it's not fixed today I'm taking this to the consumer protection agency and my lawyer.",
+        "root_cause": "not stated",
+        "resolution": "not stated",
+        "next_action": "not stated",
+        "summary": "This is the third time my order's arrived broken and I've had enough. If it's not fixed today I'm taking this to the consumer protection agency and my lawyer."
+      },
+      "rule_references": [
+        "1.7",
+        "4.1",
+        "3.2",
+        "2.1",
+        "2.4",
+        "2.5"
+      ],
+      "decision_reason": "Clause 4.1 escalation trigger detected.",
+      "escalation_reason": "External/legal/public exposure threat"
+    },
+    {
+      "call_id": "K-017",
+      "passed": true,
+      "expected": {
+        "category": "Account Management",
+        "subcategory": "security concern",
+        "disposition": "Escalated",
+        "sentiment": "Negative",
+        "priority": "Urgent",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "actual": {
+        "category": "Account Management",
+        "subcategory": "security concern",
+        "disposition": "Escalated",
+        "sentiment": "Negative",
+        "priority": "Urgent",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "There are three withdrawals on my account I did not make. I think someone has access to my account.",
+        "root_cause": "not stated",
+        "resolution": "not stated",
+        "next_action": "That's serious — I'm escalating this to our fraud team immediately and flagging the account.",
+        "summary": "There are three withdrawals on my account I did not make. I think someone has access to my account."
+      },
+      "rule_references": [
+        "1.5",
+        "3.2",
+        "4.1",
+        "2.1",
+        "2.4",
+        "2.5"
+      ],
+      "decision_reason": "Clause 4.1 escalation trigger detected.",
+      "escalation_reason": "Suspected fraud or account-security misuse"
+    },
+    {
+      "call_id": "K-018",
+      "passed": true,
+      "expected": {
+        "category": "Other",
+        "subcategory": "welfare",
+        "disposition": "Escalated",
+        "sentiment": "At-risk",
+        "priority": "Urgent",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "actual": {
+        "category": "Other",
+        "subcategory": "welfare",
+        "disposition": "Escalated",
+        "sentiment": "At-risk",
+        "priority": "Urgent",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "I don't know who else to call. I'm really not coping, I've been having very dark thoughts and I missed my appointment.",
+        "root_cause": "not stated",
+        "resolution": "not stated",
+        "next_action": "Thank you for telling me. I'm going to connect you with someone who can help you properly right now.",
+        "summary": "I don't know who else to call. I'm really not coping, I've been having very dark thoughts and I missed my appointment."
+      },
+      "rule_references": [
+        "1.10",
+        "4.1",
+        "4.3",
+        "6.1",
+        "3.2",
+        "2.1",
+        "2.4",
+        "2.5"
+      ],
+      "decision_reason": "Clause 4.1 escalation trigger detected.",
+      "escalation_reason": "Vulnerable customer / possible mental-health crisis"
+    },
+    {
+      "call_id": "K-019",
+      "passed": true,
+      "expected": {
+        "category": "Technical Support",
+        "subcategory": "service outage",
+        "disposition": "Escalated",
+        "sentiment": "Negative",
+        "priority": "Urgent",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "actual": {
+        "category": "Technical Support",
+        "subcategory": "service outage",
+        "disposition": "Escalated",
+        "sentiment": "Negative",
+        "priority": "Urgent",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "My internet is dropping again. You marked this fixed last week and it is clearly not fixed.",
+        "root_cause": "You're right, I can see the earlier ticket was closed. I'm escalating this to our network team as a recurring fault.",
+        "resolution": "not stated",
+        "next_action": "You're right, I can see the earlier ticket was closed. I'm escalating this to our network team as a recurring fault.",
+        "summary": "My internet is dropping again. You marked this fixed last week and it is clearly not fixed."
+      },
+      "rule_references": [
+        "1.4",
+        "3.2",
+        "4.1",
+        "2.1",
+        "2.4",
+        "2.5"
+      ],
+      "decision_reason": "Clause 4.1 escalation trigger detected.",
+      "escalation_reason": "Repeat contact about an issue previously marked resolved"
+    },
+    {
+      "call_id": "K-020",
+      "passed": true,
+      "expected": {
+        "category": "Complaint",
+        "subcategory": "staff conduct",
+        "disposition": "Escalated",
+        "sentiment": "Negative",
+        "priority": "High",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "actual": {
+        "category": "Complaint",
+        "subcategory": "staff conduct",
+        "disposition": "Escalated",
+        "sentiment": "Negative",
+        "priority": "High",
+        "escalate": true,
+        "decision": "ESCALATE"
+      },
+      "comparisons": {
+        "category": true,
+        "subcategory": true,
+        "disposition": true,
+        "sentiment": true,
+        "priority": true,
+        "escalate": true,
+        "decision": true
+      },
+      "mismatches": {},
+      "grounding": {
+        "issue": "One of your staff was completely rude to me yesterday and hung up. I want to make a formal complaint and I want it recorded properly.",
+        "root_cause": "not stated",
+        "resolution": "not stated",
+        "next_action": "I'm very sorry. This is a formal complaint about conduct — I'm escalating it to a supervisor.",
+        "summary": "One of your staff was completely rude to me yesterday and hung up. I want to make a formal complaint and I want it recorded properly."
+      },
+      "rule_references": [
+        "1.7",
+        "4.1",
+        "3.2",
+        "2.1",
+        "2.4"
+      ],
+      "decision_reason": "Clause 4.1 escalation trigger detected.",
+      "escalation_reason": "Serious complaint about staff conduct"
+    }
+  ]
+}
